@@ -136,7 +136,7 @@ bash $SCRIPT_PATH/run_crabusb_uboot_usb_start.sh | tee $LOG_PATH/$(date +%Y%m%d_
 
 ## 4. 上下文管理：把最重要的东西写进 `CLAUDE.md`
 
-驱动 Debug 的难点不是“写代码”，而是“别被错误的上下文带跑”。这张图非常形象：
+驱动 Debug 的难点不是“写代码”，而是“别被错误的上下文带跑”。这张图非常形象(来自 [Getting AI to Work in Complex Codebases](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md))：
 
 ![Impact Hierarchy for Coding Agents：从下到上依次是 Command/CLAUDE.md、Specification、Research、Plan、Code。越靠下的错误（例如一条错误的命令/上下文约束）会放大成指数级的错误代码量；因此人类应把精力优先放在最高杠杆的环节。](./imgs/impact_hierarchy.png)
 
